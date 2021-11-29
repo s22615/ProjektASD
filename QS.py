@@ -18,8 +18,6 @@ def Partition(A, p, r):
 
 
 def QuickSort(A, p, r):
-    if len(A) == 1:
-        return A
     if p < r:
         q = Partition(A, p, r)
         QuickSort(A, p, q - 1)
